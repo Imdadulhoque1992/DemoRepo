@@ -1,0 +1,17 @@
+package FrameWorkPackage;
+
+import java.io.IOException;
+import java.io.Reader;
+
+import org.apache.poi.xssf.eventusermodel.XSSFReader;
+import org.testng.Reporter;
+
+public class UtilityClass {
+	static XSSFReader reader();
+	public void UtilMethod() {
+		reader=new xls reader("D:\\Ecmmerce\\Framework\\Reg_Data.xlsx")
+		{
+			
+		
+	}
+

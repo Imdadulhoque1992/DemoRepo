@@ -1,0 +1,20 @@
+package ScannerTutorial;
+
+public class Scaner {
+	
+	
+
+    void m1()
+      {
+System.out.println("hi m1-method"); 
+    }
+ void m2()  
+  {
+System.out.println("hi m2-method"); 
+        }
+public static void main(String[] args)
+    {
+	Scaner   t=new Scaner();
+   t.m1();
+   t.m2();
+      } } 

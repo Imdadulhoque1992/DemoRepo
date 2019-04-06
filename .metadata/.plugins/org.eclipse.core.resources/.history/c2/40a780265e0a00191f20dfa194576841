@@ -1,0 +1,25 @@
+package ABCD;
+
+import java.util.Set;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WH {
+	public static void main(String[] args)throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+		ChromeDriver browser=new ChromeDriver();
+		browser.get("https://www.naukri.com/");
+	Set<String> allWH=browser.getWindowHandles();
+	int count=browser.getWindowHandles().size();
+System.out.println(count);
+for(String all:allWH) {
+	System.out.println(all);
+	browser.switchTo().window(all);
+	
+String	title=browser.getTitle();
+System.out.println(title);
+
+}
+browser.quit();	
+	
+	}}

@@ -1,0 +1,26 @@
+package FrameWorkPackage;
+
+import java.io.IOException;
+import java.io.Reader;
+
+public class UtilityClass {
+	static XLs_Reader reader;
+	public void UtilMethod() {
+		reader=new xls reader() {
+			
+			@Override
+			public int read(char[] arg0, int arg1, int arg2) throws IOException {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			@Override
+			public void close() throws IOException {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+	}
+
+}

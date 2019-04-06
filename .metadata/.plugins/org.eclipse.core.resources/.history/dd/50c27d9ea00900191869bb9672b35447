@@ -1,0 +1,28 @@
+package ABCD;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Popups {
+public static void main(String[] args)throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+	ChromeDriver browser=new ChromeDriver();
+	browser.get("file:///C:/Users/RAKESH/Desktop/1.html");
+	browser.manage().window().maximize();
+	browser.findElement(By.xpath("//button[@onclick='myFun()']")).click();
+	Thread.sleep(5000);
+	Alert alert=browser.switchTo().alert();
+String	text=alert.getText();
+System.out.println(text);
+alert.accept();
+browser.findElement(By.xpath("//button[@onclick='myFun()']")).click();
+alert.dismiss();
+browser.close();
+
+	
+}
+}

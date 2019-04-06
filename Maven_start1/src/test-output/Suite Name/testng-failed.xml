@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite Name]">
+  <test thread-count="5" name="Test new(failed)">
+    <parameter name="pass" value="Rakesh@92"/>
+    <parameter name="pass2" value="Rakesh@92"/>
+    <parameter name="username2" value="Rakesh@92"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <parameter name="username" value="rr.imdadul1992@gmail.com"/>
+    <classes>
+      <class name="testNG.NewTest">
+        <methods>
+          <include name="a" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG.NewTest -->
+    </classes>
+  </test> <!-- Test new(failed) -->
+</suite> <!-- Failed suite [Suite Name] -->

@@ -1,0 +1,25 @@
+package ScannerTutorial;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class DropDownprint {
+
+	public static  void main(String[] args) throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+	ChromeDriver driver=new ChromeDriver();	
+	driver.get("https://www.google.com/");
+	Thread.sleep(3000);
+//	driver.findElement(By.name("q")).sendKeys("selenium"+Keys.ENTER);
+	driver.findElement(By.xpath("//a[contains(@href,'ZgBCAg')]")).click();
+	Thread.sleep(3000);
+	driver.manage().window().maximize();
+	driver.findElement(By.xpath("//a[contains(@href,'CiIQ2ZgBCAc')]")).click();
+	Thread.sleep(3000);
+	driver.close();
+	
+	}}
+

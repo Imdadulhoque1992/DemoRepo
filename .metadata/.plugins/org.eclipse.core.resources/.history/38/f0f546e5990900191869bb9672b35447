@@ -1,0 +1,24 @@
+package ABCD;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Popups {
+public static void main(String[] args)throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+	ChromeDriver browser=new ChromeDriver();
+	browser.get("https://ksrtc.in/oprs-web/");
+	browser.manage().window().maximize();
+	browser.findElement(By.xpath("//button[@type='submit']")).sendKeys(Keys.ENTER);
+	browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	Alert alert = browser.switchTo().alert();
+	browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	alert.dismiss();
+	browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	browser.close();
+}
+}

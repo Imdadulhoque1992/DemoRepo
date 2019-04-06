@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="test-browser" value= "1st stage passed"></parameter>
+<parameter name="test-browser 1" value="2nd stage passed"></parameter>
+<parameter name="test-browser 3" value="3rd stage passed"></parameter>
+<parameter name="test-browser 4" value="4th stage passed"></parameter>
+  <test  name="Test">
+  <classes>
+  <class name="testNG.preview">
+ 
+  </class>
+  </classes>
+  
+  </test> 
+  
+</suite> 

@@ -1,0 +1,18 @@
+package ScreenshotPack;
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class NewClass implements IRetryAnalyzer {
+int initial=0;
+int RetryValue=3;
+	@Override
+	public boolean retry(ITestResult result) {
+		if(initial<RetryValue)
+		{
+			return true;
+		}
+		return false;
+	}
+
+}

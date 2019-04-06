@@ -1,0 +1,33 @@
+package ScannerTutorial;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test {
+
+	static int i;
+    int j; 
+void values(int a,int b) 
+    {
+      i=a;  
+       j=b; 
+              } 
+void add()
+       {
+System.out.println(i+j);
+       }
+void mul() 
+  {
+    System.out.println(i*j);  
+                }
+public static void main(String[] args)  
+  {
+   Test t=new Test(); 
+         t.values(100,200);
+          t.add(); 
+          t.mul(); 
+              } }
+                          
+                          
+                          

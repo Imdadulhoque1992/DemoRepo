@@ -1,0 +1,25 @@
+package ScannerTutorial;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test {
+
+
+    void m1() 
+       {
+    m2();  
+System.out.println("m1 method"); 
+          }
+      void  m2() 
+           { 
+System.out.println("m2 method"); 
+         }
+public static void main(String[] args) 
+        {
+ Test t=new Test();
+         t.m1();
+              } }
+                          
+                          

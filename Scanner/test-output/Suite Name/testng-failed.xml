@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite Name]">
+  <parameter name="pass" value="Rakesh@92"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <parameter name="username" value="rr.imdadul1992@gmail.com"/>
+  <test name="TestNG(failed)">
+    <parameter name="pass" value="Rakesh@92"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <parameter name="username" value="rr.imdadul1992@gmail.com"/>
+    <classes>
+      <class name="ScannerTutorial.TestNGRun">
+        <methods>
+          <include name="a"/>
+        </methods>
+      </class> <!-- ScannerTutorial.TestNGRun -->
+    </classes>
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [Suite Name] -->

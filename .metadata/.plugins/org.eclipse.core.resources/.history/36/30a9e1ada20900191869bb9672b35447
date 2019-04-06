@@ -1,0 +1,30 @@
+package ABCD;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Popups {
+public static void main(String[] args)throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+	ChromeDriver browser=new ChromeDriver();
+	browser.get("https://www.cleartrip.com/");
+	browser.manage().window().maximize();
+		Alert alert=browser.switchTo().alert();
+		alert.dismiss();
+	browser.findElement(By.xpath("//input[@class='booking large']")).click();
+	Thread.sleep(5000);	
+String	text=alert.getText();
+System.out.println(text);
+browser.findElement(By.xpath("//input[@type='text']")).click();
+browser.findElement(By.className("ui-state-default ")).click();
+Thread.sleep(6000);
+
+browser.close();
+
+	
+}
+}

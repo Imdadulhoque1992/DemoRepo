@@ -1,0 +1,16 @@
+package ABCD;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Popups {
+public static void main(String[] args)throws InterruptedException {
+	System.setProperty("webDriver.chrome.driver","C:\\Selenium chrome\\chromedriver.exe");
+	ChromeDriver browser=new ChromeDriver();
+	browser.get("https://ksrtc.in/oprs-web/");
+	browser.manage().window().maximize();
+	browser.findElement(By.xpath("//button[@type='submit']")).sendKeys(Keys.ENTER);
+	
+}
+}

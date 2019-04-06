@@ -1,0 +1,13 @@
+package FrameWorkPackage;
+
+import java.sql.Driver;
+
+public class FrameWorkBase {
+	@Test
+	public void  EbayTest() {
+		Driver.findElement(By)
+		
+	}
+	
+
+}

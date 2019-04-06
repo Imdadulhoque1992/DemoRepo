@@ -1,0 +1,20 @@
+package FrameWorkPackage;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.Reader;
+
+import org.apache.poi.xssf.eventusermodel.XSSFReader;
+import org.testng.Reporter;
+
+public class UtilityClass {
+	static XSSFReader reader();
+	public void UtilMethod() {
+	File	srcFile=new File("D:\\Ecmmerce\\Framework\\Reg_Data.xlsx");
+	FileInputStream fis=new FileInputStream(srcFile);
+		{
+			
+		
+	}
+

@@ -1,0 +1,26 @@
+package ScannerTutorial;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test {
+
+    public static void main(String[] args)
+          {
+    	System.setProperty("webdriver.chrome.driver","search-ms:displayname=Search%20Results%20in%20Downloads&crumb=location:C%3A%5CUsers%5CRAKESH%5CDownloads\\chromedriver_win32");
+       //Open the Browser
+    	ChromeDriver driver=new ChromeDriver();
+    	driver.get("http://demo.actitime.com/login.do");
+    	String title=driver.getTitle();
+    	System.out.println(title);
+
+    	String url=driver.getCurrentUrl();
+    	System.out.println(url);
+    	driver.close();
+    	    }}
+    	         
+                 
+                          
+                          
+                          

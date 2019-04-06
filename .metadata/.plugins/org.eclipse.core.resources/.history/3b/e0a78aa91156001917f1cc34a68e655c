@@ -1,0 +1,17 @@
+package FrameWorkPackage;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+webDriver driver;
+public class FrameWorkBase {
+	@Test
+	public void  EbayTest() {
+		Driver.findElement(By.name("firstname")).clear();
+		driver
+		
+	}
+	
+
+}

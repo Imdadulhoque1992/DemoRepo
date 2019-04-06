@@ -1,0 +1,29 @@
+package ScannerTutorial;
+
+
+
+public class Test {
+
+
+    int a=10;
+    int b=20;
+    public static void main(String[] args) {
+    	
+    
+    }
+       }
+class Child extends Test
+        {
+   int x=100;
+   int y=200;  
+ void add(int i,int j)
+        {
+System.out.println(i+j);
+System.out.println(x+y); 
+System.out.println(a+b); 
+      }
+public static void main(String[] args)
+         {
+Child c=new Child();
+  c.add(1000,2000); 
+                } } 
